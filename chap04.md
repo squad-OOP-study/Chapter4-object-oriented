@@ -24,7 +24,7 @@ open class ItemList {
     }
 }
 
-open class ExpiredItemList: ItemList() {
+class ExpiredItemList: ItemList() {
     val expiredItemList = arrayListOf<String>()
 
     fun put(expiredItem:String) {
@@ -65,13 +65,13 @@ fun main() {
 > 결론  
 >> 상속보다는 조립을 먼저 고민해보자!
 
-#### 📗 위임(delegation)
+#### 🔖 위임(delegation)
 - 내가 할 일을 다른 객체에게 넘긴다는 의미
-- 책에서는 상속을 통해 위임을 구현할 수 있다고 말함
+- 책에서는 조립을 통해 위임을 구현할 수 있다고 말함
 - 코틀린에서는 `by` 키워드를 통해 구현
 - 위임을 사용하면 실행 시간이 다소 증가하지만 위임을 통해서 얻을 수 있는 유연함/재사용의 장점이 더 크다.
 
-#### 📗 상속은 언제 사용하나?
+#### 🔖 상속은 언제 사용하나?
 1. 상속은 재사용의 관점보다는 기능의 확장의 관점에서 사용해야한다. (즉, 기능의 재사용을 위해 상속을 활용하기 보다는 기능을 확장할 때 상속을 활용하자)
 2. 명확하게 IS-A 관계가 성립될 때 활용하자.
    ![5](https://user-images.githubusercontent.com/95393311/153717446-9fc21be9-1338-46a8-adaf-9f832f1d8c75.jpg)
