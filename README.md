@@ -93,4 +93,4 @@ class Container (
 
 ### 참조
 
-[링크 자료](https://jojoldu.tistory.com/412)
+[일급 컬렉션](https://tecoble.techcourse.co.kr/post/2020-05-08-First-Class-Collection/)
